@@ -1,0 +1,421 @@
+
+@import "var"
+
+// 			+++	main body style +++
+
+body
+	overflow-x: hidden 
+	ul, li 
+		list-style-type: none
+		margin: 0px
+		padding: 0px
+		font-size: 16px
+	h1
+		font-family: "Exo", sans-serif
+		font-weight: 100
+		font-size: 3.75em
+		line-height: 1.25
+		word-spacing: 2px
+		letter-spacing: 2px
+	h2
+		font-family: "Exo", sans-serif
+		font-weight: 500
+		color: rgb(40, 40, 40)
+		font-size: 2.5em
+		word-spacing: 1px
+		letter-spacing: 1px
+		line-height: 1.3	
+	h3 
+		font-family: 'Exo'
+		color: $tomato-font
+		font-weight: 500
+		text-transform: uppercase	
+		font-size: 1em
+		letter-spacing: 3px
+	h4
+		font-family: "Exo Thin"
+		color: rgb(40, 40, 40)
+		word-spacing: 1px
+		letter-spacing: 1px
+		line-height: 1.3
+		font-size: 1.375em
+
+	button
+		outline: none
+		background: none
+		border: none
+		&:hover
+			outline: none
+		&:focus
+			outline: none
+	input, input:focus
+		outline: none
+
+	span#tomato_color
+		color: rgb(255, 109, 109)
+
+
+// 				HEADER   -  style
+
+
+header
+	background-image: url("#{$get-path-to-img }/bg_header.jpg")
+	background-size: cover
+	background-position: center
+	color: rgb(40, 40, 40)
+	text-align: center
+	padding-top: 10%
+	padding-bottom: 11%
+
+
+.header_nav_menu
+	display: none
+
+
+.header_title 
+	clear: both
+.header_play 
+	margin: 0 auto
+	padding: 0 0 2.7% 0
+
+	button#header_btn_play
+		padding: 0 0 0 0
+		width: 59px
+		height: 59px
+		
+	button#header_btn_play svg
+		background-color: rgba(130,134,163, 1)
+		border-radius: 50%	
+	button#header_btn_play:hover
+		transform: scale(1.125)
+		-ms-transform: scale(1.125)
+		-webkit-transform: scale(1.125)
+		-moz-box-transform: scale(1.125)
+	button#header_btn_play:hover
+		border-radius: 51%
+		-webkit-box-shadow: -1px -2px 54px 8px rgba(130,134,163,1)
+		-moz-box-shadow: -1px -2px 54px 8px rgba(130,134,163,1)
+		box-shadow: -1px -2px 54px 8px rgba(130,134,163,1)
+
+.header_try_now button#try_now
+	background-color: rgb(255, 109, 109)
+	width: 190px
+	height: 50px
+	border-radius: 3px
+	text-transform: uppercase
+	color: rgb(255, 255, 255)
+	text-align: center	
+	letter-spacing: 2px
+	font-family: "Exo", sans-serif
+	font-weight: 400
+	&:hover
+		transform: scale(1.05)
+		-ms-transform: scale(1.05)
+		-webkit-transform: scale(1.05)
+		background-color: rgba(255, 109, 109, 0.75)
+.header_try_now p 
+	font-family: "Exo", sans-serif
+	font-weight: 500
+	color: $content-text-p-color
+	font-size: 0.875em
+
+.section_2
+	padding-top: 10%
+	padding-bottom: 6%
+	background-image: url("#{$get-path-to-img}/bg_section_2.svg")
+	background-repeat: no-repeat
+	background-position: 100% 100%
+	background-size: 40%
+
+.section_2_desctiption 
+	float: left
+	h2 
+		margin: 0 0 0.55em 0 
+	h3
+		margin: 0 0
+		text-transform: uppercase
+	p 
+		@include main-content-text
+		padding-left: 0px
+
+.section_2_gadget .section_2_gadget_svg
+	filter: drop-shadow(-2px 9px 10px rgba(0, 0, 0, 0.6))
+
+
+// 				SECTION 3  -  style
+
+
+.section_3 
+	padding-top: 7%
+	padding-bottom: 11%	
+	background-color: rgb(246, 245, 243)
+	background-image: url("#{$get-path-to-img}/bg_section_3_pen_holder.png"), url("#{$get-path-to-img}/bg_section_3_earphones.png"), url("#{$get-path-to-img}/bg_section_3_coffee_cup.png")
+	background-repeat: no-repeat
+	background-position: 7% -4%, 87% -4%, 94% 129%
+.section_3_title
+	margin: 0 auto
+	text-align: center
+	padding-bottom: 6.8%	
+	h2
+		margin: 0 0
+	h3
+		margin: 0 0
+		text-transform: uppercase
+	
+.group_awesome 
+	img 
+		display: block
+		margin: 0 auto	
+	h4
+		margin-top: 1.1em
+		margin-bottom: 0
+		font-size: 1.375em
+		text-align: center
+		color: rgb(40, 40, 40)
+		font-weight: 700
+	p 
+		@include main-content-text 
+		margin-top: 0.6em
+		text-align: center
+
+// 				SECTION 4  -  style 	- 	description
+	
+.description
+	background-image: url("#{$get-path-to-img}/bg_description.svg")
+	background-repeat: no-repeat
+	background-position:  0% 0%
+	background-size: 100%
+	padding-top: 6.5%
+	padding-bottom: 5%
+
+.description .description_macbook_text
+
+	h2 
+		margin: 0 0 0.55em 0 
+	h3
+		margin: 0 0 0.5em 0 
+		text-transform: uppercase
+	p 
+		@include main-content-text
+		padding-left: 0px
+		margin-top: 0.1em
+
+.description_macbook svg
+
+	padding: 0 0 0 4%
+
+// 				SECTION 5  -  style 	- 	reviews
+
+
+.reviews
+	background-image: url("#{$get-path-to-img}/bg_feedback.jpg")
+	background-repeat: no-repeat
+	padding-top: 6%
+	padding-bottom: 4%
+	text-align: center
+	background-size: cover
+	img#reviews_content_photo 
+		border: 2px solid rgb(29, 30, 36)
+		background-color: rgb(78, 78, 94)
+		width: 80px
+		height: 80px
+	h4
+		font-size: 1.4em
+		color: rgb(255, 255, 255)
+		margin-bottom: 0px
+
+	h5
+		color: $tomato-font
+		margin-top: 3px
+	p 
+		color: rgba(255, 255, 255, 0.659)
+		line-height: 1.625
+		padding: 5px 10px 0 10px
+		font-family: "Exo"
+		font-weight: 500
+		font-style: italic
+
+
+
+.reviews_partner_row
+	padding-top: 7%
+	margin: 0 auto
+
+
+
+.browser 
+	padding-top: 6%
+	text-align: center	
+
+	h2
+		margin-top: 0px
+		margin-bottom: 15px
+	h3
+		margin-bottom: 0px
+		text-transform: uppercase
+		color: $tomato-font
+		margin-top: 12px
+	p 
+		@include main-content-text 
+		padding: 0 15px 75px 15px
+.browser_img
+	padding-top: 200px 
+	padding-bottom: 170px
+	background-image: url("#{$get-path-to-img}/bg_browser.png")
+	background-repeat: no-repeat
+	background-position: 50% 0%
+	text-align: center
+
+
+.feedback_form
+	background-color: rgb(50, 57, 105)
+	padding-top: 6%
+	padding-bottom: 5%
+
+.feedback_form_title
+	text-align: center
+	h2
+		color: rgb(255, 255, 255)
+		margin-top: 0px
+		margin-bottom: 15px
+	h3
+		color: $tomato-font
+		margin-bottom: 0px
+		margin-top: 10px
+
+
+.feedback_form_trial_anot
+	float: right
+	color: rgb(246, 245, 243)
+	
+	span img
+		margin: 15px 0 0 0
+	p 
+		font-family: "Exo"
+		font-weight: 400
+		margin-top: 0px
+
+form 
+	display: table
+	font-family: "Exo"
+	font-weight: 400
+	input[type="text"]
+		display: table-cell
+		border: 1px solid rgba(255,255,255, 1)
+		border-radius: 3px
+		background-color: rgba(255, 255, 255, 0.1)
+		width: 256px
+		height: 47px
+		color: rgb(246, 245, 243)
+		text-transform: uppercase	
+		padding: 0 20px
+		margin: 15px 15px 15px 15px
+		&:hover
+			border: 1px solid rgba(255,255,255, 0.4)
+		&:focus 
+			-webkit-box-shadow: -1px -2px 50px 7px rgba(255,109,109,0.28)
+			-moz-box-shadow: -1px -2px 50px 7px rgba(255,109,109,0.28)
+			box-shadow: -1px -2px 50px 7px rgba(255,109,109,0.28)
+	input[type="button"]
+		display: table-cell
+		border: 1px solid rgb(255, 109, 109)
+		border-radius: 3px
+		background-color: rgb(255, 109, 109)		
+		width: 256px
+		height: 48px
+		box-shadow: 0px 3px 3px 0px rgba(14, 15, 15, 0.25)
+		color: rgb(246, 245, 243)
+		text-transform: uppercase
+		margin-left: 15px
+		margin-right: 15px
+		&:hover 
+			transform: scale(1.05)
+			-ms-transform: scale(1.05)
+			-webkit-transform: scale(1.05)
+
+			
+p#feedback_form_term_s
+	font-family: "Exo"
+	font-weight: 400
+	margin-top: 50px
+	text-align: center
+	color: rgba(246, 245, 243, 0.6)
+	a, a:visited 
+		color: rgba(246, 245, 243, 0.6)
+		text-decoration: none
+		border-bottom: 1px solid rgba(246, 245, 243, 0.6)
+		&:hover 
+			color: white
+.footer 
+	padding-top: 3%
+	padding-bottom: 3%
+	background-image: url("#{$get-path-to-img}/bg_footer.svg")
+	background-repeat: no-repeat	
+	background-position: 100% 0%
+	background-size: 25%
+	line-height: 1.857
+	h4 
+		font-family: "Exo"
+		font-weight: 500
+		margin-bottom: 22px
+	a, a:visited
+		color: $content-text-p-color
+.adress 
+	h4 
+		margin-bottom: 0px
+	img#footer_startex_img 
+		margin-top: -4px
+	p 
+		font-size: 0.875em
+		@include main-content-text 
+
+ul, li 
+	font-size: 0.875em
+	color: $content-text-p-color
+	font-family: "Exo"
+	font-weight: 400
+.footer_feedback_form form 
+
+	input[type="text"]
+		float: left
+		margin: 0 0 0 0
+		border: 1px solid rgba(78, 78, 94, 0.4)
+		border-radius: 3px 0 0 3px
+		background-color: rgba(141, 141, 141, 0.1)
+		color: rgba(0, 0, 0, 0.4)
+		width: 220px
+		height: 47px
+		padding-left: 25px
+		&:hover
+			background-color: rgba(141, 141, 141, 0.0)
+	input[type="button"]
+		font-family: "Exo"
+		font-weight: 400
+		float: left
+		margin: 0 0 0 -2px
+		width: 50px
+		height: 47px
+		background-image: url("#{$get-path-to-icon}/footer_letter_icon.png")
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		box-shadow: 0px 3px 3px 0px rgba(14, 15, 15, 0.25)
+		background-color: rgb(255, 109, 109)
+		&:hover 
+			transform: scale(1.05)
+			-ms-transform: scale(1.05)
+			-webkit-transform: scale(1.05)
+			-webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75)
+			-moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75)
+			box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75)
+
+.social_icon 
+	margin-left: 10%
+	svg
+		padding: 0 20px
+		margin-top: 25px
+
+		
+
+
+
+@import "responsive"
